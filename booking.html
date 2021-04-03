@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet"type="text/css"href="h41.css"/>
+<link rel="stylesheet"type="text/css"href="header.css"/>
+<link rel="stylesheet"type="text/css"href="rightdiv.css"/>
+<link rel="stylesheet"type="text/css"href="nav.css"/>
+<link rel="stylesheet"type="text/css"href="nava.css"/>
+<link rel="stylesheet"type="text/css"href="footer.css"/>
+<link rel="stylesheet"type="text/css"href="a1.css"/>
+<link rel="stylesheet"type="text/css"href="h1.css"/>
+<link rel="stylesheet"type="text/css"href="span.css"/>
+<link rel="stylesheet"type="text/css"href="h3.css"/>
+<link rel="stylesheet"type="text/css"href="jumbotron.css"/>
+<link rel="stylesheet"type="text/css"href="body.css"/>
+<style>
+p{
+color:white;
+}
+a:link {
+  color: #996515;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: yellow;
+} 
+.navbar-custom{
+        background-color:#13CDDF;
+                
+     }
+     .navbar-nav > li{
+  padding-left:30px;
+  padding-right:120px;
+}
+</style>
+<title>Booking</title>
+</head>
+<body>
+<div class="jumbotron text-center">Adventour in Malaysia</div><br>
+<nav class="navbar navbar navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><b>HOME</b></a></li>
+                        <li><a href="places.html"><b>PLACES</b></a></li>
+                        <li><a href="hotels.html"><b>HOTELS</b></a></li>
+                        <li><a href="activities.html"><b>ACTIVITIES</b></a></li>
+                        <li><a href="info.html"><b>MORE INFO</b></a></li>
+                    </ul>
+                </div>
+            </div>
+</nav>
+<p><a href="hotels.html" style="color:pink">Back</a></p>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h1><center>Please enter the following details to book</center></h1><br>
+<form action="res3.html" method="post">
+<fieldset>
+<h3>
+Choose a hotel:</h3>
+<input list="hotels" name="hotel" id="hotel" required style="color:black">
+<datalist id="hotels">
+  <option value="The Prestige hotel,Penang">
+  <option value="Hard Rock Hotel,Johar">
+  <option value="Ambong-Ambong,Kedah">
+  <option value="Terrapurri,Terrengganu">
+</datalist><br><br>
+<h3>Date and time from:</h3>
+<input type="datetime-local" id="date" name="date" style="color:black"><br><br>
+<h3>Date and time to:</h3>
+<input type="datetime-local" id="date" name="date" style="color:black"><br><br>
+<h3>No.of people:</h3>
+<input type="number" id="people" name="people" style="color:black"><br><br>
+<div class="col-sm-3">
+<h3>No.of rooms required:</h3>
+<input type="range" id="room" name="room" min="0" max="10">
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<br><br>
+<h3>Room type:</h3>
+<input type="radio" id="Single" name="room" value = "Single" style="color:black">Single&ensp;&ensp;
+<input type="radio" id="Double" name="room" value = "Double" style="color:black">Double&ensp;&ensp;
+<input type="radio" id="Triple" name="room" value = "Triple" style="color:black">Triple&ensp;&ensp;
+<input type="radio" id="King" name="room" value = "King" style="color:black">King<br>
+<input type="radio" id="Queen" name="room" value = "Queen" style="color:black">Queen&ensp;&ensp;
+<input type="radio" id="Studio" name="room" value = "Studio" style="color:black">Studio&ensp;&ensp;
+<input type="radio" id="Master Suite" name="room" value = "Master Suite" style="color:black">Master Suite&ensp;&ensp;
+<input type="radio" id="Mini-Suite" name="room" value = "Mini-Suite" style="color:black">Mini-Suite<br><br>
+<h3>Theme of room:</h3>
+<input type="color" id="color" name="color" value="#ff0000"><br><br>
+<h3>Attach address proof:</h3>
+<input type="file" id="myfile" name="myfile"><br><br>
+<center><h3>Want to know the average price of rooms?</h3><a href="avgprice.html" style="color:pink">Click here</a></center>
+</h3>
+<center><input type="submit" value="Submit" style="color:black"/>&ensp;&ensp;<input type="reset" value="Reset" style="color:black"/></center>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+<br>
+<div class="footer">
+<hr>
+<h4><center><b>&copy;Developed by M.V.Priyadharsini-18ITR077</b></center></h4><hr>
+</div>
+</body>
+</html>

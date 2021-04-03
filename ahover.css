@@ -1,0 +1,14 @@
+.a{
+link {
+  color: #996515;
+}
+visited {
+  color: green;
+}
+hover {
+  color: red;
+}
+active {
+  color: yellow;
+}
+} 

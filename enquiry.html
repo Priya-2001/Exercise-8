@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<html>
+<head>
+<link rel="stylesheet"type="text/css"href="h41.css"/>
+<link rel="stylesheet"type="text/css"href="h1.css"/>
+<link rel="stylesheet"type="text/css"href="h3.css"/>
+<link rel="stylesheet"type="text/css"href="h2.css"/>
+<link rel="stylesheet"type="text/css"href="a1.css"/>
+<link rel="stylesheet"type="text/css"href="jumbotron.css"/>
+<link rel="stylesheet"type="text/css"href="body.css"/>
+<style>
+a:link {
+  color: #996515;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: yellow;
+} 
+.navbar-custom{
+        background-color:#13CDDF;
+                
+     }
+     .navbar-nav > li{
+  padding-left:30px;
+  padding-right:120px;
+}
+</style>
+<title>Enquiry</title>
+</head>
+<body>
+<div class="jumbotron text-center">Adventour in Malaysia</div><br>
+<nav class="navbar navbar navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><b>HOME</b></a></li>
+                        <li><a href="places.html"><b>PLACES</b></a></li>
+                        <li><a href="hotels.html"><b>HOTELS</b></a></li>
+                        <li><a href="activities.html"><b>ACTIVITIES</b></a></li>
+                        <li><a href="info.html"><b>MORE INFO</b></a></li>
+                    </ul>
+                </div>
+            </div>
+</nav>
+<a href="index.html" style="color:pink">Back</a>
+<h1><center>Enquiry Form</center></h1><br>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<form method="post" action="res1.html">
+<fieldset>
+<h3>
+Full Name:</h3>
+<span style="width:85px"></span>
+<select id = "salutation" style="color:black">
+               <option value = "Mr.">Mr.</option>
+               <option value = "Ms.">Ms.</option>
+               <option value = "Mrs.">Mrs.</option>
+               <option value = "Dr.">Dr.</option>
+             </select>
+<input type="text" id="fname" name="fname" required style="color:black">
+<h3>E-mail:</h3><span style="width:120px"></span>
+<input type="email" id="email" name="email" placeholder="abc@gmail.com" required style="color:black">
+<h3>Phone Number:</h3><span style="width:55px"></span>
+<input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="Should contain 10 digits" required style="color:black">
+<h3>Subject:</h3><br>
+<input type="text" id="sub" name="sub" required style="color:black">
+<h3>Description:</h3><span style="width:80px"></span>
+<textarea rows="4" cols="50" required style="color:black"></textarea><br><br>
+<input type="submit" value="Submit" style="color:black"/>&ensp;&ensp;<input type="reset" value="Reset" style="color:black"/><br>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+<div class="col-md-12"><hr>
+<h4><center><b>&copy;Developed by M.V.Priyadharsini-18ITR077</b></center></h4><hr>
+</div>
+</body>
+</html>
+

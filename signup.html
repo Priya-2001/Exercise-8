@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet"type="text/css"href="h41.css"/>
+<link rel="stylesheet"type="text/css"href="h1.css"/>
+<link rel="stylesheet"type="text/css"href="h3.css"/>
+<link rel="stylesheet"type="text/css"href="h2.css"/>
+<link rel="stylesheet"type="text/css"href="span.css"/>
+<link rel="stylesheet"type="text/css"href="a1.css"/>
+<link rel="stylesheet"type="text/css"href="jumbotron.css"/>
+<link rel="stylesheet"type="text/css"href="body.css"/>
+<title>Signup</title>
+<style>
+.head{
+background-color:orange;
+}
+a:link {
+  color: #996515;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: yellow;
+} 
+.navbar-custom{
+        background-color:#13CDDF;
+                
+     }
+     .navbar-nav > li{
+  padding-left:30px;
+  padding-right:120px;
+}
+</style>
+</head>
+<body>
+<div class="jumbotron text-center">Adventour in Malaysia</div><br>
+<nav class="navbar navbar navbar-custom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html"><b>HOME</b></a></li>
+                        <li><a href="places.html"><b>PLACES</b></a></li>
+                        <li><a href="hotels.html"><b>HOTELS</b></a></li>
+                        <li><a href="activities.html"><b>ACTIVITIES</b></a></li>
+                        <li><a href="info.html"><b>MORE INFO</b></a></li>
+                    </ul>
+                </div>
+            </div>
+</nav>
+<p><a href="login.html" style="color:pink">Back</a></p>
+<h1><center>Please enter the following details to signup</center></h1><br>
+<form method="post" action="http://localhost:8000/signup">
+<fieldset>
+<div class="head">
+<h2><center>Personal Information</center></h2>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<h3>First Name:</h3>
+<select id = "salutation" style="color:black">
+               <option value = "Mr.">Mr.</option>
+               <option value = "Ms.">Ms.</option>
+               <option value = "Mrs.">Mrs.</option>
+               <option value = "Dr.">Dr.</option>
+             </select>
+<input type="text" id="fname" name="fname" required style="color:black"><br><br>
+<h3>Last Name:</h3>
+<input type="text" id="lname" name="lname" required style="color:black"><br><br>
+<h3>Date of Birth:</h3>
+<input type="date" id="dob" name="dob" required style="color:black"><br><br>
+<h3>E-mail:</h3>
+<input type="email" id="email" name="email" placeholder="abc@gmail.com" required style="color:black"><br><br>
+<h3>Phone Number:</h3>
+<input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="Should contain 10 digits" required style="color:black"><br><br>
+<h3>Country:</h3>
+<input list="countries" name="country" id="country" required style="color:black">
+<datalist id="countries">
+  <option value="Albania">
+  <option value="Britain">
+  <option value="India">
+  <option value="Japan">
+  <option value="South Korea">
+  <option value="United States of America">
+</datalist><br><br>
+<h3>City:</h3>
+<input type="text" id="cname" name="cname" required style="color:black"><br><br>
+<h3>Address:</h3>
+<textarea rows="4" cols="50" required style="color:black"></textarea><br><br>
+<h3>Do you have or had any of the following?</h3><br><br>
+<input type="checkbox" name="disease" id="heart disease" style="color:black">
+Heart disease<br>
+<input type="checkbox" name="disease" id="eye disease" style="color:black">
+Eye disease<br>
+<input type="checkbox" name="disease" id="dermatologic" style="color:black">
+Dermatologic<br>
+<input type="checkbox" name="disease" id="gastrointestinal" style="color:black">
+GastroIntestinal<br>
+<input type="checkbox" name="disease" id="gyenecological" style="color:black">
+Gyenecological<br><br>
+<h3>Allergies if any:</h3>
+<input list="allergy" name="allergies" id="allergies" style="color:black">
+<datalist id="allergy">
+  <option value="Skin">
+  <option value="Drug">
+  <option value="Food">
+  <option value="Insect">
+  <option value="Pet">
+  <option value="Pollen">
+</datalist>
+<div class="head">
+<h2><center>Login Information</center></h2>
+</div>
+<h3>Username:</h3>
+<input type="text" id="uname" name="uname" required style="color:black"><br><br>
+<h3>Password:</h3>
+<input type="password" id="pwd" name="pwd" required style="color:black"><br><br>
+<center><input type="submit" value="Submit" name="signup" style="color:black"/>&ensp;&ensp;<input type="reset" value="Reset" style="color:black"/></center>
+</h3>
+</fieldset>
+</form>
+</div>
+</div>
+</div>
+<br>
+<div class="col-sm-12">
+<h4><hr><center><b>&copy;Developed by M.V.Priyadharsini-18ITR077</b></center></h4><hr>
+</div>
+</body>
+</html>
